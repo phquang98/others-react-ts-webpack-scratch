@@ -21,6 +21,21 @@ module.exports = {
           },
         ],
       },
+      // any css files will be interpret by these 2 loaders
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"], //! position important
+      },
+      // any files with these extensions are treated as resources by webp
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: "asset/resource",
+      },
+      // any files with these extensions are treated as inline ele by webp
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: "asset/inline",
+      },
     ],
   },
   // reduce everything into a file, put it under /build folder, give it the name `bundle.js`

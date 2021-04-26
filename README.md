@@ -18,6 +18,18 @@ Learn what the fuck CRA do when `npx create-react-app my-app --template typescri
 - changes are not instantly visible as when using CRA
   - hot reload enable, auto detech changes -> transpile -> display right into browser
 
+### Second video
+
+- all cmds
+  - `npm i `
+  - `npm i -D css-loader style-loader`
+- error when bundling `.css` file -> webpack + babel dont understand/cant interpret it into `.js`
+  - -> use loader when detect `.css` file extensions
+- loader position IS IMPORTANT
+  - `use: ["style-loader", "css-loader"],` OK, but `use: ["css-loader", "style-loader"],` error
+- can create declaration files for static assets to become a module ?
+- for fonts & svg files, webpack 4 use `url-loader file-loader`, but webpack 5 can treated them as asset/inline
+
 ## Reference
 
 [This 8 videos](https://www.youtube.com/watch?v=Elpu7CIuqjY&list=PLC3y8-rFHvwiWPS2RO3BKotLRfgg_8WEo)
