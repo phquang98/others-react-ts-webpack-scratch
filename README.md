@@ -1,6 +1,6 @@
 # React Typescript Webpack Setup From Scratch
 
-Learn how to start a React + TS app without using CRA.\
+Learn how to start a React + TS app without using CRA aka what CRA do under the hood.\
 Last updated: 28/04/2021.
 
 ## Notes
@@ -62,6 +62,8 @@ Last updated: 28/04/2021.
 ### Sixth video
 
 - create a script to run prettier to format whole project
+- personal: add `eslint-webpack-plugin`
+  - now when prj err but still force save + `npm run build` -> now webp will output error on the `bundle.js`
 
 ### Seventh video
 
