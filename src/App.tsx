@@ -9,7 +9,8 @@ const App = () => {
   return (
     <Fragment>
       <h1>
-        Vue Typescript Webpack Learning Template - {process.env.NODE_ENV} - {process.env.name}
+        Vue Typescript Webpack Learning Template {process.env.NODE_ENV}
+        {process.env.name}
       </h1>
       <img src={ReactImage} alt="React Logo" width="300" height="200" />
       <img src={LOGO} alt="React Logo" width="300" height="200" />

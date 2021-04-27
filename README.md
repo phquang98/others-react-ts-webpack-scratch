@@ -48,6 +48,16 @@ Learn what the fuck CRA do when `npx create-react-app my-app --template typescri
 - hot module replacement/react refresh(newer): only partial render the changes state of the app, other compoes dont rerender
   - e.g without: click btn 5 times, then changes title -> rerender whole page -> btn is 0 not 5
   - e.g with: click btn 5 times, then changes title -> detects changes in titles only -> rerender title -> btn still 5
+  - will see this in console, `[WDS] Live Reloading enabled.` and `[WDS] Hot Module Replacement enabled.`
+
+### Fifth video
+
+- all cmds
+  - `npm i -D eslint eslint-plugin-react eslint-plugin-react-hooks @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-config-prettier prettier`
+- npm script `showErr` will exit status 1 if any error existed in the project
+  - why use this: good for CI/CD later and no retard `eslint src/App.tsx` to check ESLint working or not
+- [Changes in Prettier and ESLint)[https://github.com/prettier/eslint-config-prettier/blob/main/CHANGELOG.md#version-800-2021-02-21]
+- some personal flavor, added `eslint-webpack-plugin` to dev envi so that if project has error but still force bundling, webpack will emmit code
 
 ## Reference
 

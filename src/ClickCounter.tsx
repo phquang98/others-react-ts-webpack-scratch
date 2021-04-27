@@ -6,7 +6,7 @@ const ClickCounter = () => {
   return (
     <Fragment>
       <button
-        onClick={(e) => {
+        onClick={() => {
           setCount((count) => count + 1);
         }}
       >
