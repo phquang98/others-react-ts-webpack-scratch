@@ -56,8 +56,17 @@ Learn what the fuck CRA do when `npx create-react-app my-app --template typescri
   - `npm i -D eslint eslint-plugin-react eslint-plugin-react-hooks @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-config-prettier prettier`
 - npm script `showErr` will exit status 1 if any error existed in the project
   - why use this: good for CI/CD later and no retard `eslint src/App.tsx` to check ESLint working or not
-- [Changes in Prettier and ESLint)[https://github.com/prettier/eslint-config-prettier/blob/main/CHANGELOG.md#version-800-2021-02-21]
+- [Changes in Prettier and ESLint](https://github.com/prettier/eslint-config-prettier/blob/main/CHANGELOG.md#version-800-2021-02-21)
 - some personal flavor, added `eslint-webpack-plugin` to dev envi so that if project has error but still force bundling, webpack will emmit code
+
+### Sixth video
+
+- create a script to run prettier to format whole project
+
+### Seventh video
+
+- all cmds
+  - `npm i -D husky@4.3.8 lint-staged`
 
 ## Reference
 
