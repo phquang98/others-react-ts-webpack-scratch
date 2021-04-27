@@ -4,6 +4,8 @@ Learn what the fuck CRA do when `npx create-react-app my-app --template typescri
 
 ## Notes
 
+3.
+
 ### First video
 
 - all cmds
@@ -29,6 +31,17 @@ Learn what the fuck CRA do when `npx create-react-app my-app --template typescri
   - `use: ["style-loader", "css-loader"],` OK, but `use: ["css-loader", "style-loader"],` error
 - can create declaration files for static assets to become a module ?
 - for fonts & svg files, webpack 4 use `url-loader file-loader`, but webpack 5 can treated them as asset/inline
+
+### Third video
+
+- all cmds
+  - `npm i -D webpack-merge`
+- restructure `/webpack` folder
+  - `common.js` will be the main config for webp
+  - `dev.js` and `prod.js` will be implemented into `common.js` based on feeded args from `config.js` captured in npm scripts
+  - can also create envi variables in webp config files (should use `dotenv` instead)
+- mode can make a difference
+  - in this small exercise, `dev` created 1.36 MB while `prod` is 138 KB -> ~10 times significantly faster loading website
 
 ## Reference
 
