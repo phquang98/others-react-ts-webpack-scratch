@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   // where webp should start to create the dependency tree
@@ -47,6 +48,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "..", "./src/index.html"),
+    }),
+    new CopyPlugin({
+      patterns: [{ from: "./src/assets", to: "./assets" }], //! to: "./build/assets" is wrong
     }),
   ],
 };

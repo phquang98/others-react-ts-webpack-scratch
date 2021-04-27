@@ -1,6 +1,7 @@
 # React Typescript Webpack Setup From Scratch
 
-Learn what the fuck CRA do when `npx create-react-app my-app --template typescript`.
+Learn how to start a React + TS app without using CRA.\
+Last updated: 28/04/2021.
 
 ## Notes
 
@@ -21,7 +22,6 @@ Learn what the fuck CRA do when `npx create-react-app my-app --template typescri
 ### Second video
 
 - all cmds
-  - `npm i `
   - `npm i -D css-loader style-loader`
 - error when bundling `.css` file -> webpack + babel dont understand/cant interpret it into `.js`
   - -> use loader when detect `.css` file extensions
@@ -67,6 +67,15 @@ Learn what the fuck CRA do when `npx create-react-app my-app --template typescri
 
 - all cmds
   - `npm i -D husky@4.3.8 lint-staged`
+
+### Eight vidoe
+
+- all cmds
+  - `npm i -D @babel/runtime @babel/plugin-transform-runtime copy-webpack-plugin webpack-bundle-analyzer`
+- `@babel/runtime @babel/plugin-transform-runtime`: allow React use async/await ???
+- `copy-webpack-plugin`: author made a mistake, when docs write `{ from: "source", to: "dest" },` they mean to replace the source and dest into URL, not post it directly
+  - check [docs](https://www.npmjs.com/package/copy-webpack-plugin) for more details
+- `webpack-bundle-analyzer`: put in prod, when `npm run build`, open browsers to show the size of the bundle
 
 ## Reference
 

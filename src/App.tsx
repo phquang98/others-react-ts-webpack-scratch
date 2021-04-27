@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 
 import "./styles.css";
-import ReactImage from "./react.png";
-import LOGO from "./bottle_longneck.svg";
+import ReactImage from "./assets/react.png";
+import LOGO from "./assets/bottle_longneck.svg";
 import ClickCounter from "./ClickCounter";
 
 const App = () => {

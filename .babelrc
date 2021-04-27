@@ -9,6 +9,7 @@
     ],
     "@babel/preset-typescript"
   ],
+  //? allow you use asyn/await in react
   "plugins": [
     [
       "@babel/plugin-transform-runtime",
