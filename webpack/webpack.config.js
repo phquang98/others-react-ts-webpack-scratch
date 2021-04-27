@@ -6,7 +6,6 @@ const commonConfig = require("./webpack.common.js");
 // write like a fnc -> now can access to args in npm scripts
 module.exports = (envVars) => {
   const { env } = envVars;
-  console.log(envVars);
   const envConfig = require(`./webpack.${env}.js`);
   const config = merge(commonConfig, envConfig);
   return config;

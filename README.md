@@ -4,8 +4,6 @@ Learn what the fuck CRA do when `npx create-react-app my-app --template typescri
 
 ## Notes
 
-3.
-
 ### First video
 
 - all cmds
@@ -42,6 +40,14 @@ Learn what the fuck CRA do when `npx create-react-app my-app --template typescri
   - can also create envi variables in webp config files (should use `dotenv` instead)
 - mode can make a difference
   - in this small exercise, `dev` created 1.36 MB while `prod` is 138 KB -> ~10 times significantly faster loading website
+
+### Fourth video
+
+- all cmds
+  - `npm i -D @pmmmwh/react-refresh-webpack-plugin react-refresh`
+- hot module replacement/react refresh(newer): only partial render the changes state of the app, other compoes dont rerender
+  - e.g without: click btn 5 times, then changes title -> rerender whole page -> btn is 0 not 5
+  - e.g with: click btn 5 times, then changes title -> detects changes in titles only -> rerender title -> btn still 5
 
 ## Reference
 
